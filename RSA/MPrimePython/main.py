@@ -40,12 +40,12 @@ print("dn = ",dn)
 
 Mn = []
 for i in range(len(p)):
-    Mn.append((pow(C,dn[i]))%p[i])
+    Mn.append((pow(C,dn[i],p[i])))
 print("Mn = ",Mn)
 
 x = 0
 for i in range(len(p)):
-    x += Mn[i] * N / p[i] * pow(int(N / p[i]), -1,int(p[i]))
+    x += int(Mn[i]) * int(N / p[i]) * pow(int(N / p[i]), -1,int(p[i]))
 x = x % N
 
 print(x)
