@@ -1,12 +1,5 @@
 import math
 
-def inverse(num,mod):
-    out = 0
-    while True:
-        out = out + 1
-        if (num * out) % mod == 1:
-            return out
-
 def coprimo(num):
     for out2 in range(2,num):
         if math.gcd(num,out2) == 1:
@@ -34,7 +27,7 @@ print("fiN = ", fiN)
 e = coprimo(fiN)
 print("e = ", e)
 
-d = inverse(e,fiN)
+d = pow(e,-1,fiN)
 print("d = ", d)
 
 C = pow(int(input("insira a mensagem:")),e)%N
@@ -52,7 +45,7 @@ print("Mn = ",Mn)
 
 x = 0
 for i in range(len(p)):
-    x += Mn[i] * N / p[i] * inverse(N / p[i], p[i])
+    x += Mn[i] * N / p[i] * pow(int(N / p[i]), -1,int(p[i]))
 x = x % N
 
 print(x)
