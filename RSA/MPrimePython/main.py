@@ -1,12 +1,13 @@
 import math
 
+
 def coprimo(num):
     for out2 in range(2,num):
         if math.gcd(num,out2) == 1:
             return out2
 
 quant = int(input("Quantos numeros primos?"))
-
+ 
 
 p = []
 for i in range(quant):
