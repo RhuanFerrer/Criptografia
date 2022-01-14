@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+
 long int resto(long int num1, long int num2) {
     return num1 - num2 * (num1 / num2);
 }

@@ -7,6 +7,7 @@ def coprimo(num):
 
 quant = int(input("Quantos numeros primos?"))
 
+
 p = []
 for i in range(quant):
     p.append(int(input()))

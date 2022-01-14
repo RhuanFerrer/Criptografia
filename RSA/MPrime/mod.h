@@ -3,6 +3,6 @@
 
 long int mod(long int num, long int modu);
 long int inverse(long int num, long int modu);
-
+ 
 /**/
 #endif

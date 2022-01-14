@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+ 
 #include "mathp.h"
 #include "mod.h"
 #include "primo.h"
-
+  
 int main(int argc, char** argv) {
     int quant = argc;
     puts("---------------");
